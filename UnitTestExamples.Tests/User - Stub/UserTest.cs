@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using NSubstitute;
 
 namespace UnitTestExamples.Stub.Tests
 {
@@ -51,6 +52,18 @@ namespace UnitTestExamples.Stub.Tests
 			};
 
 			User receiver = new User("Mika", "mika@example.com", stub);
+
+            Assert.Throws<InvalidOperationException>(
+                () => receiver.SendMessage("Hello!"),
+                "InvalidOperationException shuld be thrown if mail sending didn't succeed.");
+        }
+
+        [Test]
+        public void SendMesageNSubstituteTest()
+        {
+            var stub = Substitute.For<IMailManager>();
+            stub.SendEmail(Arg.Any<Email>()).Returns(false);
+            User receiver = new User("Mika", "mika@example.com", stub);
 
             Assert.Throws<InvalidOperationException>(
                 () => receiver.SendMessage("Hello!"),
