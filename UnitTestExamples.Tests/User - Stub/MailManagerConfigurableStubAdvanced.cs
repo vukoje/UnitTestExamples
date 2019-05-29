@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace UnitTestExamples.Stub.Tests
 {
-	public class MailManagerConfigurableStubAdvanced : IMailManager
+    public class MailManagerConfigurableStubAdvanced : IMailManager
 	{
 		public Func<Email, bool> SendEmailHandler { get; set; }
 
