@@ -1,5 +1,5 @@
 ﻿
-namespace UnitTestExamples
+namespace UnitTestExamples.Calculation
 {
     public interface ICalculatorHelper
     {
