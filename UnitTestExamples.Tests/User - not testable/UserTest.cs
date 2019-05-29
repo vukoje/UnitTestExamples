@@ -1,9 +1,8 @@
 ﻿using NUnit.Framework;
-using UnitTestExamples.NotTestable;
 
 namespace UnitTestExamples.NotTestable.Tests
 {
-	public class UserTest
+    public class UserTest
 	{
 		[Test]
 		public void SendMessageTest()

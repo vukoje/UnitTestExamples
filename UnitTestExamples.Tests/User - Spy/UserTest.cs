@@ -1,9 +1,8 @@
 ﻿using NUnit.Framework;
-using UnitTestExamples.Spy;
 
 namespace UnitTestExamples.Spy.Tests
 {
-	public class UserTest
+    public class UserTest
 	{
 		[Test]
 		public void SendMessageTest()

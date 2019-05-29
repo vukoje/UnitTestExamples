@@ -1,9 +1,8 @@
 ﻿using System.Collections.ObjectModel;
-using UnitTestExamples.Spy;
 
 namespace UnitTestExamples.Spy.Tests
 {
-	public class MailManagerSpy : IMailManager
+    public class MailManagerSpy : IMailManager
 	{
 		public Collection<Email> SentLog { get; set; }
 

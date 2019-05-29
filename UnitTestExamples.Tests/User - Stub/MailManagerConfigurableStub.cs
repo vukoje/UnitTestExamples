@@ -1,9 +1,6 @@
-﻿
-using UnitTestExamples;
-
-namespace UnitTestExamples.Stub.Tests
+﻿namespace UnitTestExamples.Stub.Tests
 {
-	public class MailManagerConfigurableStub : IMailManager
+    public class MailManagerConfigurableStub : IMailManager
 	{
 		public bool Result { get; set; }
 
