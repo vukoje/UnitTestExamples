@@ -72,5 +72,7 @@ namespace UnitTestExamples.Tests
 			AdvancedCounter counter = new AdvancedCounter();
             Assert.Throws<InvalidOperationException>(() => counter.Decrease(), "Decrease Should throw InvalidOperationException when Number iz zero.");
 		}
+
+        
 	}
 }
