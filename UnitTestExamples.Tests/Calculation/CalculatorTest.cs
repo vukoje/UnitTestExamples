@@ -9,7 +9,7 @@ namespace UnitTestExamples.Tests.Calculation
         public CalculatorHelperStub Stub { get; set; }
 
         [SetUp]
-        public void TestInitialize()
+        public void SetUp()
         {
             this.Stub = new CalculatorHelperStub();
             this.Calculator = new Calculator(this.Stub);

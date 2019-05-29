@@ -8,7 +8,7 @@ namespace UnitTestExamples.Tests
 		private Counter Counter { get; set; }
 
 		[SetUp]
-		public void TestInitialize()
+		public void SetUp()
 		{
 			this.Counter = new Counter(); // Implicit setup
 		}
