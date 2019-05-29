@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using UnitTestExamples.Basic;
 
 namespace UnitTestExamples.Tests
 {

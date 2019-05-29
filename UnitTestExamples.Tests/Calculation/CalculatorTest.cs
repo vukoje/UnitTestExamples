@@ -5,14 +5,14 @@ namespace UnitTestExamples.Tests.Calculation
 {
     public class CalculatorGetPriceTest
     {
-        private UnitTestExamples.Calculation.Calculator Calculator { get; set; }
+        private Calculator Calculator { get; set; }
         public CalculatorHelperStub Stub { get; set; }
 
         [SetUp]
         public void TestInitialize()
         {
             this.Stub = new CalculatorHelperStub();
-            this.Calculator = new UnitTestExamples.Calculation.Calculator(this.Stub);
+            this.Calculator = new Calculator(this.Stub);
         }
 
         [Test]

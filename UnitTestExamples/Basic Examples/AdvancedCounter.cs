@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnitTestExamples
+namespace UnitTestExamples.Basic
 {
 	public class AdvancedCounter
 	{

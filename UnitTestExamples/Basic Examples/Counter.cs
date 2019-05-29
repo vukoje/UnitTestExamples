@@ -1,5 +1,5 @@
 ﻿
-namespace UnitTestExamples
+namespace UnitTestExamples.Basic
 {
 	public class Counter
 	{
