@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace UnitTestExamples.Spy.Tests
+namespace UnitTestExamples.Stub.Tests
 {
     public class MailManagerSpy : IMailManager
 	{
