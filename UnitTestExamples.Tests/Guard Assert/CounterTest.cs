@@ -17,9 +17,6 @@ namespace UnitTestExamples.Tests.GuardAssert
                 Assert.Inconclusive("Guard Asser: Number should be -1 insted of {0}", counter.Number);
             }
 
-            // guard assert 2
-            //Assert.AreEqual(-1, 0, "Gurad assert.");
-
             counter.Decrease(); // Exercise
             Assert.AreEqual(-2, counter.Number, "Number SHOULD be -2 after Decrease on Number -1."); // Verify
         }
